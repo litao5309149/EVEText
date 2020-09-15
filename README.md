@@ -30,7 +30,47 @@
 
 
 
-
-
-
 ---
+白盒测试法测冒泡排序法
+        1.冒泡排序法Java源代码
+
+   /*
+ * 冒泡排序
+ */
+public class BubbleSort {
+　　
+ 
+   public void BubbleSort(int[] arr){
+ 
+　　　　for(int i=0;i<arr.length-1;i++){//外层循环控制排序趟数
+　　　　　　for(int j=0;j<arr.length-1-i;j++){//内层循环控制每一趟排序多少次
+　　　　　　　　if(arr[j]>arr[j+1]){
+　　　　　　　　　　int temp=arr[j];
+　　　　　　　　　　arr[j]=arr[j+1];
+　　　　　　　　　　arr[j+1]=temp;
+　　　　　　　　}
+　　　　　　}
+　　
+        //输出
+ 
+        System.out.println("排序后数组元素为:");
+        for(int num : arr){
+ 
+           System.out.print( num + "  " );
+ 
+           }
+       }　　
+ 
+ 
+}
+ 2.冒泡排序法程序流程图
+ ![如图显示](https://img-blog.csdnimg.cn/20190420162306850.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dlb29vbw==,size_16,color_FFFFFF,t_70)
+
+
+
+
+
+
+
+
+
